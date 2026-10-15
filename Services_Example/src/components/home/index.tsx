@@ -227,7 +227,7 @@ export default function Home() {
 
             <button
               type="button"
-              className="inline-flex items-center justify-center rounded-full bg-[#AF6548] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_10px_20px_rgba(175,101,72,0.15)] transition hover:bg-[#976247]"
+              className="ml-auto mr-2 inline-flex w-fit items-center justify-center rounded-full bg-[#AF6548] px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_10px_20px_rgba(175,101,72,0.15)] transition hover:bg-[#976247]"
             >
               Agendar
             </button>
