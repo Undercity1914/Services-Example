@@ -197,114 +197,44 @@ export default function Home() {
 
   if (isPreview) {
     return (
-      <div className="flex min-h-[620px] items-center justify-center bg-[#f3efe9] p-5 text-[#172C36] sm:p-6">
-        <div className="relative w-full max-w-[980px] overflow-hidden rounded-[30px] border border-[#e7d8ca] bg-[#f9f5f1] shadow-[0_20px_48px_rgba(23,44,54,0.08)]">
-          <div className="flex items-center justify-between border-b border-[#efe1d6] bg-[#f4e8df] px-4 py-3 sm:px-5">
+      <div className="flex min-h-[520px] items-center justify-center bg-[#FAF7F2] p-6 text-[#172C36]">
+        <div className="w-full max-w-[720px] overflow-hidden rounded-[28px] border border-[#e8d7ca] bg-white shadow-[0_16px_45px_rgba(23,44,54,0.08)]">
+          <div className="flex items-center justify-between border-b border-[#f0e7e0] bg-[#F8E9DF] px-4 py-3">
             <div className="flex items-center gap-2">
               <div className="h-2.5 w-2.5 rounded-full bg-[#AF6548]" />
-              <div className="h-2.5 w-2.5 rounded-full bg-[#d9b49a]" />
-              <div className="h-2.5 w-2.5 rounded-full bg-[#d9b49a]" />
+              <div className="h-2.5 w-2.5 rounded-full bg-[#d7b5a5]" />
+              <div className="h-2.5 w-2.5 rounded-full bg-[#d7b5a5]" />
             </div>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#536877] sm:text-[11px]">
+            <span className="text-[11px] font-medium uppercase tracking-[0.18em] text-[#5c6c77]">
               Clara — Psicologia
             </span>
           </div>
-
-          <header className="flex items-center justify-between gap-4 bg-[#f9f5f1] px-4 py-4 sm:px-6">
-            <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#172C36] text-[11px] font-bold text-[#f9f5f1]">
-                C
-              </div>
-              <div className="text-lg font-bold tracking-[-0.04em] text-[#172C36]">Clara</div>
-            </div>
-
-            <nav className="hidden items-center gap-5 text-[11px] font-medium uppercase tracking-[0.12em] text-[#536877] md:flex">
-              <span>Início</span>
-              <span>Serviços</span>
-              <span>Sobre</span>
-              <span>Contato</span>
-            </nav>
-
-            <button
-              type="button"
-              className="ml-auto mr-2 inline-flex w-fit items-center justify-center rounded-full bg-[#AF6548] px-5 py-2.5 text-[11px] font-semibold uppercase tracking-[0.12em] text-white shadow-[0_10px_20px_rgba(175,101,72,0.15)] transition hover:bg-[#976247]"
-            >
-              Agendar
-            </button>
-          </header>
-
-          <main className="grid gap-6 px-4 pb-6 pt-4 sm:px-6 sm:pb-8 sm:pt-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-8">
+          <div className="grid gap-6 p-6 md:grid-cols-[1.1fr_0.9fr] md:p-8">
             <div className="space-y-4">
               <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#AF6548]">
                 Um espaço de escuta
               </p>
               <h2
                 style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
-                className="max-w-[12ch] text-3xl leading-[0.96] tracking-[-0.05em] text-[#172C36] sm:text-4xl lg:text-[3.5rem]"
+                className="text-3xl leading-tight text-[#172C36] md:text-4xl"
               >
-                Página de serviços
+                Mais bem-estar para a sua rotina
               </h2>
-              <p className="max-w-md text-sm leading-6 text-[#4d5f6a] sm:text-base">
-                Destaque o que você faz e converta interesse em oportunidades. Uma página de serviços explica
-                sua oferta de forma clara e conduz o visitante até o contato.
+              <p className="text-sm leading-6 text-[#4d5f6a]">
+                Atendimento psicológico online e presencial, com acolhimento e respeito à sua história.
               </p>
-
-              <ul className="space-y-2 text-sm text-[#2d4a56]">
-                {['Explica sua oferta', 'Responde dúvidas frequentes', 'Direciona para o contato'].map((item) => (
-                  <li key={item} className="flex items-center gap-2">
-                    <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#F4E2D8] text-[10px] font-bold text-[#AF6548]">
-                      ✓
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <div className="flex flex-wrap items-center gap-3 pt-2">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-2 rounded-full bg-[#AF6548] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#976247]"
-                >
-                  Quero uma página de serviços
-                  <ArrowRight size={16} />
-                </button>
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-2 rounded-full border border-[#d7c1af] bg-[#fff] px-4 py-3 text-sm font-semibold text-[#172C36]"
-                >
-                  Tag Assistant
-                </button>
-              </div>
+              <button
+                type="button"
+                className="inline-flex items-center gap-2 rounded-full bg-[#AF6548] px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#976247]"
+              >
+                Agendar uma conversa
+                <ArrowRight size={16} />
+              </button>
             </div>
-
-            <div className="relative">
-              <div className="overflow-hidden rounded-[24px] border border-[#ead7c9] bg-[#f5e3d5] p-3 shadow-[0_16px_30px_rgba(23,44,54,0.06)]">
-                <div className="h-[260px] rounded-[18px] bg-[radial-gradient(circle_at_top,_#f9efe8,_#f1dfd1_36%,_#d8d0c5_100%)] sm:h-[300px] lg:h-[340px]">
-                  <div className="flex h-full items-center justify-center">
-                    <div className="relative h-[70%] w-[80%] rounded-[18px] border border-[#e9d6c6] bg-[linear-gradient(135deg,_#f8efe6,_#e9dcc8)] shadow-inner">
-                      <div className="absolute left-[12%] top-[18%] h-[42%] w-[26%] rounded-full bg-[#d8c3ae] opacity-80" />
-                      <div className="absolute right-[10%] top-[14%] h-[54%] w-[33%] rounded-[18px] bg-[#d9b59f] opacity-65" />
-                      <div className="absolute inset-x-[16%] bottom-[10%] h-[24%] rounded-[20px] bg-[#e5ccb6] opacity-80" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-3 right-3 w-[80%] max-w-[300px] rounded-[18px] border border-[#d8c5b3] bg-[#f8f5f2] p-3 shadow-[0_16px_28px_rgba(23,44,54,0.08)]">
-                <div className="mb-2 flex items-center justify-between">
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#7d8a92]">
-                    Assistente de tags conectado
-                  </span>
-                  <button type="button" className="text-[#536877]" aria-label="Fechar assistente">
-                    ×
-                  </button>
-                </div>
-                <div className="rounded-2xl border border-[#eee1d8] bg-[#f5eaeb] px-3 py-2 text-sm text-[#2d4a56]">
-                  As informações de recuperação desta página estão visíveis na janela do assistente de tags.
-                </div>
-              </div>
+            <div className="overflow-hidden rounded-[22px] border border-[#eeded2] bg-[#F8E9DF] p-3">
+              <div className="h-full min-h-[220px] rounded-[18px] bg-[radial-gradient(circle_at_top,_#f9efe8,_#f4e2d7_45%,_#d8cfbf)]" />
             </div>
-          </main>
+          </div>
         </div>
       </div>
     );
@@ -313,7 +243,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#FAF7F2] text-[#172C36]">
       <header id="inicio" className="border-b border-[#e9dcce] bg-[#FAF7F2]/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
           <a href="#inicio" className="flex items-center gap-3" aria-label="Voltar para início">
             <span
               className="flex h-11 w-11 items-center justify-center rounded-full border border-[#e8d4c6] bg-[#F8E9DF] text-sm font-bold text-[#AF6548]"
@@ -329,7 +259,7 @@ export default function Home() {
             </span>
           </a>
 
-          <nav aria-label="Navegação principal" className="hidden items-center gap-8 md:flex">
+          <nav aria-label="Navegação principal" className="hidden items-center gap-8 lg:flex">
             {navItems.map((item) => (
               <a key={item.label} href={item.href} className="text-sm font-medium text-[#3f4f5b] transition hover:text-[#172C36]">
                 {item.label}
@@ -337,12 +267,12 @@ export default function Home() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
+          <div className="hidden shrink-0 lg:block">
             <button
               type="button"
               ref={triggerRef}
               onClick={handleOpenModal}
-              className="inline-flex items-center gap-2 rounded-full bg-[#AF6548] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_18px_rgba(175,101,72,0.18)] transition hover:bg-[#966145]"
+              className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-[#AF6548] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_18px_rgba(175,101,72,0.18)] transition hover:bg-[#966145]"
             >
               Agendar uma conversa
               <ArrowRight size={16} />
@@ -351,7 +281,7 @@ export default function Home() {
 
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-full border border-[#e5d4c7] bg-white p-2 text-[#172C36] md:hidden"
+            className="inline-flex items-center justify-center rounded-full border border-[#e5d4c7] bg-white p-2 text-[#172C36] lg:hidden"
             aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
@@ -362,7 +292,7 @@ export default function Home() {
         </div>
 
         {menuOpen && (
-          <div id="mobile-menu" className="border-t border-[#eadfd2] bg-[#FAF7F2] px-4 py-4 md:hidden">
+          <div id="mobile-menu" className="border-t border-[#eadfd2] bg-[#FAF7F2] px-4 py-4 lg:hidden">
             <nav className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <a
